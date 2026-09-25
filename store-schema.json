@@ -1,0 +1,22 @@
+{
+ "@context": "https://schema.org",
+ "@type": "LiquorStore",
+ "name": "Kick Tonic MRP Outlet",
+ "image": "images/shop_night.jpg",
+ "telephone": "+91 90908 78739",
+ "email": "kicktoniq1@gmail.com",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "2925, West of Chord Road, Hampi Nagar, Attiguppe, Bengaluru, Karnataka 560040",
+  "addressLocality": "Bengaluru",
+  "addressRegion": "Karnataka",
+  "postalCode": "560040",
+  "addressCountry": "IN"
+ },
+ "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 10:00-22:30",
+ "priceRange": "₹50 – ₹12,510",
+ "currenciesAccepted": "INR",
+ "sameAs": [
+  "https://www.instagram.com/kick_tonic"
+ ]
+}
