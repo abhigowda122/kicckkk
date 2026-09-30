@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Beer, Gin, Liqueur &amp; RTD Price Collection | Kick Tonic</title>
+<meta name="description" content="Search Kick Tonic's supplied beer, gin, liqueur and ready-to-drink product listings by name, size, type and price.">
+<meta name="theme-color" content="#07375F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}:root{--cream:#F8F7F2;--paper:#fff;--ink:#142332;--text:#263746;--muted:#334656;--blue:#145E9E;--navy:#07375F;--gold:#8F6815;--gold-light:#E9D495;--pale:#E8F1F8;--line:#DCE3E9;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Jost',Arial,sans-serif;--max:1220px}body{background:var(--cream);color:var(--text);font:400 16px/1.65 var(--sans)}a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);padding:0 22px;margin:auto}h1,h2{font-family:var(--serif);color:var(--ink);line-height:1.08}h1{font-size:clamp(2.5rem,5.5vw,4rem)}h2{font-size:clamp(1.7rem,3vw,2.4rem)}.top{background:linear-gradient(90deg,var(--navy),var(--blue));color:#fff;font-size:.8rem}.top .wrap{padding-top:8px;padding-bottom:8px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}.header{position:sticky;top:0;z-index:20;background:rgba(255,252,245,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.header .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:10px;padding-bottom:10px}.brand{display:flex;align-items:center;gap:10px;white-space:nowrap}.mark{width:42px;height:42px;border-radius:12px;background:linear-gradient(145deg,var(--blue),var(--navy));display:grid;place-items:center;color:var(--gold-light);font:700 1.15rem var(--serif)}.brand strong{font:700 1.2rem var(--serif);letter-spacing:.1em;color:var(--ink)}.brand small{display:block;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}nav{display:flex;gap:2px;align-items:center;justify-content:flex-end;flex-wrap:wrap}nav a{padding:7px 9px;border-radius:9px;font-size:.79rem}nav a:hover,nav a.active{background:var(--blue);color:white}.menu{display:none;border:0;background:var(--blue);color:white;border-radius:9px;padding:8px 12px;font-size:1rem}.hero{background:linear-gradient(110deg,rgba(255,255,255,.95),rgba(255,249,232,.87) 56%,rgba(225,240,251,.75)),url('images/ambience_stilllife.jpg') center/cover;border-bottom:1px solid var(--line)}.hero .wrap{padding-top:58px;padding-bottom:45px}.eyebrow{font-size:.68rem;color:var(--gold);font-weight:600;text-transform:uppercase;letter-spacing:.25em;margin-bottom:12px}.hero p{max-width:75ch;margin-top:14px;color:var(--muted)}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--blue);color:white;border:1px solid var(--blue);padding:11px 17px;border-radius:10px;font-weight:500}.btn.outline{background:#fff;color:var(--navy);border-color:#bed0df}.btn:hover{background:var(--navy);color:white}.content{padding:34px 0 60px}.category-band{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:22px}.cat-button{overflow:hidden;position:relative;min-height:92px;border:1px solid var(--line);border-radius:14px;padding:16px;text-align:left;background:#fff;cursor:pointer;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:0 10px 25px -23px #123}.cat-button:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,30,48,.75),rgba(10,30,48,.18)),var(--cat-image) center/cover;opacity:.75;transition:opacity .2s}.cat-button span,.cat-button small{position:relative;color:white;text-shadow:0 1px 5px rgba(0,0,0,.55)}.cat-button span{font:700 1.2rem var(--serif)}.cat-button small{font-size:.72rem}.cat-button:hover:before,.cat-button.on:before{opacity:1}.cat-button.on{outline:2px solid var(--gold-light);border-color:var(--gold)}.controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin:20px 0 14px}.search{flex:1 1 260px;max-width:440px;padding:12px 15px;border:1px solid #bdcbd6;border-radius:10px;background:#fff;color:var(--ink);font:inherit}.search:focus{outline:3px solid #d6e9f8;border-color:var(--blue)}.sort{padding:11px 14px;border:1px solid #bdcbd6;border-radius:10px;background:#fff;font:inherit}.summary{font-size:.87rem;color:var(--muted);margin-bottom:12px}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:15px;background:white;box-shadow:0 16px 40px -34px #123}table{width:100%;border-collapse:collapse;min-width:760px}th,td{padding:11px 14px;text-align:left;border-bottom:1px solid #e7ebef;font-size:.88rem}th{position:sticky;top:0;background:#edf4fa;color:var(--navy);font-size:.69rem;text-transform:uppercase;letter-spacing:.1em;z-index:1}tbody tr:hover{background:#f9f6eb}tbody tr:last-child td{border-bottom:0}.product{font-weight:600;color:var(--ink)}.price{font-weight:700;color:#14643e;white-space:nowrap}.rating{white-space:nowrap;color:#77570f}.pagination{display:flex;align-items:center;justify-content:center;gap:12px;margin:18px 0}.pagination button{background:white;border:1px solid var(--line);border-radius:9px;padding:8px 14px;cursor:pointer;color:var(--navy);font:inherit}.pagination button:disabled{opacity:.45;cursor:default}.photo-note{display:grid;grid-template-columns:180px 1fr;gap:18px;align-items:center;margin-top:24px;border:1px solid var(--line);background:#fff;border-radius:15px;padding:14px}.photo-note img{width:100%;height:110px;object-fit:cover;border-radius:10px}.photo-note p{font-size:.86rem;color:var(--muted)}.photo-note strong{color:var(--navy)}.foot{background:linear-gradient(135deg,#112b40,#0a3b62);color:#e8eff4;border-top:3px solid #c3a24c;padding:27px 0}.foot .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.82rem}.age{position:fixed;inset:0;z-index:99;display:none;place-items:center;background:rgba(15,27,38,.68);backdrop-filter:blur(6px);padding:18px}.age.on{display:grid}.age-card{background:white;border:1px solid var(--gold-light);border-radius:20px;max-width:430px;padding:30px;text-align:center}.age-card h2{margin-bottom:10px}.age-card p{color:var(--muted)}.age-card .buttons{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}.age-msg{display:none;margin-top:12px;color:#8a2d25}.age-msg.on{display:block}@media(max-width:950px){.category-band{grid-template-columns:repeat(2,1fr)}nav a{font-size:.72rem;padding:6px}}@media(max-width:700px){.menu{display:block}nav{display:none;position:fixed;top:62px;left:0;right:0;max-height:calc(100vh - 62px);overflow:auto;background:var(--cream);padding:12px 18px 20px;box-shadow:0 20px 35px -28px #13283d;align-items:stretch;flex-direction:column}body.navopen nav{display:flex}nav a{padding:11px;border-bottom:1px solid var(--line);font-size:.92rem;border-radius:0}.header .wrap{padding-top:8px;padding-bottom:8px}.hero .wrap{padding-top:42px;padding-bottom:34px}.content{padding:22px 0 40px}.photo-note{grid-template-columns:1fr}.photo-note img{height:155px}.controls{align-items:stretch}.search{max-width:none;width:100%}.sort{width:100%}.top .wrap{font-size:.72rem}}@media(max-width:440px){.wrap{padding-left:15px;padding-right:15px}.category-band{gap:7px}.cat-button{min-height:77px;padding:10px;border-radius:11px}.cat-button span{font-size:1rem}.cat-button small{font-size:.66rem}th,td{padding:9px 10px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><span><b>Kick Tonic · Product collection</b> — listed prices supplied for catalog display</span><a href="tel:+919090878739">Call +91 90908 78739</a></div></header>
+<header class="header"><div class="wrap"><a class="brand" href="index.html"><span class="mark">KT</span><span><strong>KICK TONIC</strong><small>MRP Outlet · Attiguppe</small></span></a><button class="menu" type="button" aria-label="Toggle navigation" onclick="document.body.classList.toggle('navopen')">☰</button><nav><a href="index.html">Home</a><a href="whisky.html">Whisky</a><a href="brandy.html">Brandy</a><a href="drinks.html">Categories</a><a class="active" href="collection.html">Product Collection</a><a href="offers.html">Offers</a><a href="contact.html">Contact</a></nav></div></header>
+<section class="hero"><div class="wrap"><div class="eyebrow">New collection · Four lists</div><h1>Find your next favourite.</h1><p>Browse the Beer, Gin, Liqueur and RTD listings by product, rating, type, size and price. These are the four sets provided; no separate Soju products were included. Use category buttons or search to narrow the list.</p><div class="hero-actions"><a class="btn" href="tel:+919090878739">☎ Call to confirm availability</a><a class="btn outline" href="drinks.html">Explore the drinks guide</a></div></div></section>
+<main class="content"><div class="wrap"><div class="category-band" id="categoryButtons"></div><div class="controls"><input id="search" class="search" type="search" placeholder="Search product, style, country…" aria-label="Search products"><select class="sort" id="sort" aria-label="Sort products"><option value="default">Sort: source order</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="rating-desc">Rating: high to low</option><option value="name-asc">Name: A to Z</option></select></div><p id="summary" class="summary" aria-live="polite"></p><div class="table-wrap"><table><thead><tr><th>Product</th><th>Size</th><th>Rating</th><th>MRP (INR)</th><th>Type</th><th>Country</th></tr></thead><tbody id="rows"></tbody></table></div><div class="pagination"><button id="prev" type="button">← Previous</button><span id="pageLabel"></span><button id="next" type="button">Next →</button></div><aside class="photo-note"><img id="categoryPhoto" src="images/cat_beer.jpg" alt="Illustrative category beverage photograph"><p><strong id="photoHeading">Beer collection</strong><br>Category photography is illustrative. Individual product photo URLs were not included with this list; no unrelated bottle photos are assigned to products. Add product image links to display exact bottle photos.</p></aside></div></main>
+<footer class="foot"><div class="wrap"><span>Ratings and product details are shown as provided. Please call to confirm current in-store stock and printed MRP.</span><span>21+ only · Drink responsibly</span></div></footer>
+<script>
+const rawProducts = `
+BEER|Lone Wolf Light Pint|330|4.4|100|Lager|India
+BEER|Weissener Strong Beer|500|4.5|100|Strong Lager|India
+BEER|Weissener Wit Light Beer|500|4.2|100|Witbier|India
+BEER|Kotsberg Premium Pils Beer|330|4.5|110|Pilsner|India
+BEER|Joes Craft Lager|330|4.5|125|Lager|India
+BEER|Joes Craft Strong|330|4.4|125|Strong Lager|India
+BEER|Joes Craft Belgium Wheat|330|4.5|125|Wheat Beer|India
+BEER|Simba Roar Edition Light Pint|330|4.5|130|Lager|India
+BEER|Corona Extra|330|4.5|130|Lager|Mexico
+BEER|Simba Stout Pint|330|4.3|130|Stout|India
+BEER|Simba Wit Pint|330|4.4|140|Witbier|India
+BEER|Bira 91 Malabar Stout Indian Coffee|330|4.4|150|Stout|India
+BEER|Mead No Label|330|4.4|150|Lager|India
+BEER|Bira 91 Indian Pale Ale|330|4.4|150|India Pale Ale (IPA)|India
+BEER|Beor 360 Lager|330|4.3|150|Lager|India
+BEER|Druk 11000 Strong Can|500|4.3|150|Strong Lager|Bhutan
+BEER|Bira White Pint|330|4.5|150|Wheat Beer|India
+BEER|Beor 360 Wheat|330|4.3|150|Wheat Beer|India
+BEER|San Miguel Pale Pilsner Beer|330|5|150|Pilsner|Philippines
+BEER|Serja Premium Strong Beer|500|3|150|Strong Ale|Brazil
+BEER|Communiti Belgian Wheat|330|4.2|150|Wheat Beer|India
+BEER|Communiti Irish Ale|330|4.2|150|Red Ale|India
+BEER|Hopper Blonde|330|4.4|150|Blonde Ale|India
+BEER|Hopper Witbeer|330|4.2|150|Witbier|India
+BEER|Bira 91 Light Low Calorie Lager|330|4.4|150|Light Lager|India
+BEER|Six Fields Cult Premium Strong Wheat Beer|650|4.4|150|Wheat Beer|India
+BEER|Kingfisher Ultra Witbier Pint|330|4.4|150|Witbier|India
+BEER|Kati Patang Bareilly Bold Craft Strong Beer|650|4.5|150|Strong Lager|India
+BEER|White Owl Spike|500|4.3|150|Lager|India
+BEER|Moonshine Coffee Mead|330|4.3|160|Mead|India
+BEER|Moonshine Grilled Pineapple Mead|330|4.4|160|Mead|India
+BEER|Moonshine Guava Chilli Mead|330|4.2|160|Mead|India
+BEER|Bro Code Light Beer|330|4.5|160|Light Lager|India
+BEER|Bro Code Strong Pint|330|4.5|160|Strong Lager|India
+BEER|Boca Cranberry|330|4.5|160|Fruit Beer|India
+BEER|Big Bro Fury Beer|500|5|160|Lager|India
+BEER|IBF Bully Strong Beer Can|500|4.5|160|Strong Lager|India
+BEER|Boca Raspberry|330|4.4|160|Fruit Beer|India
+BEER|Boca Strong Brew|330|4.5|160|Strong Ale|India
+BEER|Boca Tropical Passion|330|4.4|160|Fruit Beer|India
+BEER|White Rhino Lager|330|4.3|170|Lager|India
+BEER|White Rhino Wit|330|4.3|170|Witbier|India
+BEER|Bushwhacker Strong|650|4.2|180|Strong Lager|India
+BEER|Lonewolf Mild|650|4.4|180|Mild Ale|India
+BEER|Lonewolf Strong|650|4.5|180|Strong Lager|India
+BEER|Zila Bichhoo|500|4.2|180|Lager|India
+BEER|Hoegaarden Witbier|330|4.3|190|Witbier|India
+BEER|Hoegaarden Witbier Nectarine|330|4.4|190|Witbier|India
+BEER|Kati Patang Zesty Amber Beer|330|2|190|Lager|India
+BEER|Corona|330|4.5|190|Lager|India
+BEER|Brewdog Lost Lager Can|440|4.3|200|Lager|United Kingdom
+BEER|Budweiser Light|650|4.6|200|Light Lager|India
+BEER|Tuborg Light|650|4.4|200|Light Lager|India
+BEER|Tuborg Light Can|500|4.3|200|Light Lager|India
+BEER|Goose 312 Urban Wheat Beer|355|4.4|200|Wheat Beer|United States
+BEER|Chang Classic Beer|330|4.7|200|Lager|Thailand
+BEER|Feldschobchen Urbock|500|4.3|200|Bock|Czech Republic
+BEER|Cass Fresh Cold Brewed|330|4.3|200|Lager|South Korea
+BEER|Thunderbolt Strong Beer|500|4.4|200|Strong Lager|India
+BEER|Amsterdam|500|3.9|200|Lager|Netherlands
+BEER|Thunderbolt Select|650|4.4|200|Strong Lager|India
+BEER|Kirin Beer|500|4.4|200|Lager|Japan
+BEER|Kingfisher Strong Can|500|4.4|200|Strong Lager|India
+BEER|1664 Blanc|330|4.6|200|Witbier|France
+BEER|Bira Boom Can|500|4.7|200|Lager|India
+BEER|Bira Boom|650|4.4|200|Lager|India
+BEER|Feldschlobchen Black Can|500|4.6|200|Schwarzbier|Czech Republic
+BEER|Kingfisher Light|650|4.4|200|Lager|India
+BEER|Kingfisher Premium Lager Can|500|4.4|200|Lager|India
+BEER|Feldschobchen Pilsner|500|4.3|200|Pilsner|Czech Republic
+BEER|Hopper Blonde Can|500|4.4|200|Blonde Ale|India
+BEER|Proost Strong Beer Bottle|650|4.4|200|Strong Lager|India
+BEER|Tuborg Strong Bottle|650|4.3|200|Strong Lager|India
+BEER|Tuborg Strong Can|500|4.4|200|Strong Lager|India
+BEER|Kingfisher Premium Malt Strong|650|4.4|210|Strong Lager|India
+BEER|Singha Can|330|4.2|220|Lager|Thailand
+BEER|Brewdog Dead Pony Club Can|330|4.5|220|Pale Ale|United Kingdom
+BEER|Brewdog Lost Lager Pint|330|4.3|220|Lager|United Kingdom
+BEER|Singha Pint|330|4.5|220|Lager|Thailand
+BEER|Hopper Witbier Can|500|4.4|225|Witbier|India
+BEER|Simba Strong Bottle|650|4.4|230|Strong Lager|India
+BEER|Amstel Light|650|4.4|230|Lager|India
+BEER|Simba Strong Beer Can|500|4.5|230|Strong Lager|India
+BEER|Amstel Can|500|4.5|230|Lager|India
+BEER|Simba Light Bottle|650|4.3|230|Lager|India
+BEER|Kingfisher Ultra Witbier Can|500|4.2|250|Witbier|India
+BEER|Bira Gold Can|500|4.6|250|Lager|India
+BEER|Bira Gold|650|4.5|250|Lager|India
+BEER|Bira Rise Rice Strong Can|500|4.6|250|Strong Lager|India
+BEER|Budweiser Light Can|500|4.5|250|Light Lager|India
+BEER|Budweiser Magnum|650|4.7|250|Strong Lager|India
+BEER|Budweiser Strong Can|500|4.6|250|Strong Lager|India
+BEER|Buho Strong Can|500|4.2|250|Strong Lager|India
+BEER|Buho Witbier|500|4.5|250|Witbier|India
+BEER|Carlsberg Elephant Strong|650|4.6|250|Strong Lager|India
+BEER|Tuborg Classic|650|4.6|250|Lager|India
+BEER|Kirin Ichiban|330|4.6|250|Lager|Japan
+BEER|Miller Highlife Light|650|4.6|250|Light Lager|India
+BEER|Oranjeboom Lager Beer|330|4.2|250|Lager|Netherlands
+BEER|Bira Blonde|650|4.5|250|Blonde Ale|India
+BEER|Carlsberg Light|650|4.6|250|Lager|India
+BEER|Brewdog Punk IPA|330|4.3|250|India Pale Ale (IPA)|United Kingdom
+BEER|Brewdog Hazy Jane Can|330|4.4|250|India Pale Ale (IPA)|United Kingdom
+BEER|Heineken Beer|650|4.5|250|Lager|India
+BEER|Kingfisher Ultra Max|650|4.6|250|Lager|India
+BEER|Kingfisher Ultra|650|4.5|250|Lager|India
+BEER|Birra Moretti Beer|330|4.4|250|Lager|Italy
+BEER|Bira 91 Rise Rice Strong Lager Beer|650|4.4|250|Lager|India
+BEER|Miller Ace Strong|650|4.4|250|Strong Lager|India
+BEER|Tuborg Ice Draft|650|4.5|250|Lager|India
+BEER|Brewdog Elvis Juice|440|4|250|India Pale Ale (IPA)|Scotland
+BEER|Medusa Premium Strong Beer|500|4.7|250|Strong Ale|India
+BEER|Tiger World Accl. Lager Beer|330|5|250|Strong Lager|Vietnam
+BEER|Kingfisher Ultra Can|500|4.5|250|Lager|India
+BEER|Kingfisher Ultra Max Can|500|4.6|250|Lager|India
+BEER|Carlsberg Elephant Strong Can|500|4.7|250|Strong Lager|India
+BEER|Erdinger Wheat|330|4.2|250|Wheat Beer|Germany
+BEER|Estrella Damm Barcelona Lager Beer Pint|330|4.3|250|Lager|Spain
+BEER|Carlsberg Smooth Lager|500|4.3|250|Lager|India
+BEER|Bira White Can|500|4.5|250|Wheat Beer|India
+BEER|Bira Blonde Can|500|4.5|250|Blonde Ale|India
+BEER|Oranjeboom Strong Beer Can|500|4.5|250|Strong Lager|Netherlands
+BEER|Guinness Original Stout|440|4.6|250|Stout|Ireland
+BEER|Heineken Beer Can|500|4.5|250|Lager|India
+BEER|Red Horse Strong Beer Can|500|4.3|250|Strong Lager|Philippines
+BEER|Erdinger Dunkel|330|4.3|250|Dunkelweizen|Germany
+BEER|Corona Can|500|4.7|260|Lager|India
+BEER|Hoegaarden Witbier Rosee|500|4.4|260|Witbier|India
+BEER|Hoegaarden Can|500|4.6|260|Witbier|India
+BEER|Belgica Wheat|330|4.2|300|Wheat Beer|Belgium
+BEER|Belgica Blonde|330|4.1|300|Blonde Ale|Belgium
+BEER|Tsingtao Beer|330|4.3|300|Lager|China
+BEER|Feldschlobchen Pale Wheat Can|500|4.5|300|Wheat Beer|Czech Republic
+BEER|Belgica Beer Red|330|4.3|325|Red Ale|Belgium
+BEER|Blanche De Namur Beer|330|4.4|450|Witbier|Belgium
+BEER|Chimay Brown Ale|330|4.5|600|Brown Ale|Belgium
+BEER|Chimay Gold Brown|330|4.3|600|Belgian Ale|Belgium
+BEER|Chimay Triple Ale|330|4.4|600|Belgian Ale|Belgium
+BEER|Delirium Nocturnum|330|4.3|600|Belgian Strong Ale|Belgium
+BEER|Inedit Damm Beer|330|3.8|600|Belgian Witbier|Spain
+BEER|Delirium Tremens|330|4.4|600|Belgian Strong Ale|Belgium
+BEER|Six Fields Cult Wheat Beer|5000|5|3200|Strong Ale|India
+GIN|Schweppes Gin & Tonic RTD|275|3.7|150|Distilled|India
+GIN|Moonwalk Premium Dry Gin|750|4.6|500|London Dry|India
+GIN|Angels Haven Gin|480|4.3|550|London Dry|India
+GIN|Xclamation Gin|750|4.2|720|London Dry|India
+GIN|MGC Dry Gin|700|4|800|London Dry|Australia
+GIN|Greater Than London Gin|750|4.5|900|London Dry|India
+GIN|Iq London Dry Gin|750|4.3|900|London Dry|India
+GIN|Crafters Wild Forest Gin|700|4|900|Distilled|Estonia
+GIN|Short Story Dry Gin|750|4.2|900|London Dry|India
+GIN|Zoya Special Batch Dry Gin|750|4.6|1200|London Dry|India
+GIN|Blue Moon Dry Gin|750|4.4|1200|London Dry|India
+GIN|Tom & Mew London Dry Gin|700|4.4|1300|London Dry|India
+GIN|Zoya Premium Watermelon Gin|750|4|1400|Flavored|India
+GIN|Terai Indian Craft Gin|750|4.4|1400|London Dry|India
+GIN|Fox Gang Pink Gin|700|4.5|1400|Flavored|Germany
+GIN|Stranger & Sons Gin|700|4.5|1400|London Dry|India
+GIN|Gordons|750|4.2|1400|London Dry|England
+GIN|Pumori Small Batch Gin|750|4.5|1500|Distilled|India
+GIN|Happiness Joy Of Citrus Gin|750|4.5|1500|Flavored|India
+GIN|Happiness Joy Of Pink Gin|750|4.3|1500|Flavored|India
+GIN|Happiness Joy Of Juniper Gin|750|4.4|1500|Flavored|India
+GIN|Ginebra Premium Gin|750|4.1|1500|London Dry|Spain
+GIN|Samsara Contemporary Indian Gin|750|4.5|1500|Flavored|India
+GIN|Beefeater London Dry Gin|750|4.5|1500|London Dry|England
+GIN|Fox Gang Gin|700|4.6|1500|Flavored|Germany
+GIN|Batch Garam Masala Gin|700|2|1600|Flavored|India
+GIN|Burnetts London Dry Gin|750|4.6|1650|London Dry|United States
+GIN|Satiwa Passion Hemp Craft Gin|750|4|1700|Distilled|India
+GIN|Beefeater Pink|700|4.2|1700|Flavored|England
+GIN|Samsara Pink Gin|750|4.2|1800|Flavored|India
+GIN|Bombay Sapphire|750|4.6|1800|London Dry|England
+GIN|Bombay Sapphire Sunset Edition|750|4.3|1800|Distilled|United Kingdom
+GIN|Jin Jiji Darjeeling India Dry Gin Small Batch|700|4.4|1800|Compound|India
+GIN|Jin Jiji India Dry Gin Small Batch|700|4.2|1800|Compound|India
+GIN|Samsara Coffee And Hazelnut|750|3.9|1800|Flavored|India
+GIN|Samsara Grapefruit And Rose|750|4.4|1800|Flavored|India
+GIN|Samsara Lemon And Elderflower|750|4.3|1800|Flavored|India
+GIN|Kingsmill Pink Gin|1000|4.4|1800|Flavored|Scotland
+GIN|Tanqueray|750|4.5|1800|London Dry|England
+GIN|Greater Than Broken Bat Gin|750|4.3|1800|London Dry|India
+GIN|Bull Dog|750|4.4|2000|London Dry|England
+GIN|Tanqueray Malacca Gin|700|4.4|2000|Distilled|United Kingdom
+GIN|Tanqueray Rangpur Lime Gin|700|4.5|2000|Distilled|United Kingdom
+GIN|Brokers London Dry Gin|700|4.4|2000|London Dry|England
+GIN|Nisaki Dry Gin|750|4|2000|Distilled|India
+GIN|Tamras Gin|700|4.5|2100|Flavored|India
+GIN|Langleys Old Tom|700|4.3|2100|Old Tom|England
+GIN|Malhar Classic Dry Indian Craft Gin|750|4.5|2200|Compound|India
+GIN|Langleys London Dry Gin|700|4.3|2200|London Dry|England
+GIN|Gordons Premium Pink Gin|1000|4.4|2200|Flavored|England
+GIN|Malhar Citrus Indian Craft Gin|750|4.3|2200|Flavored|India
+GIN|Stranger & Sons Perry Road Peru|750|4.7|2250|Genever|India
+GIN|Malfy Lemon Gin|750|4.4|2400|Flavored|Italy
+GIN|Hapusa Dry Gin|750|4.4|2500|London Dry|India
+GIN|The English Drinks Cucumber Gin|700|4.3|2700|Flavored|England
+GIN|The English Drinks Pink Dry Gin|700|4.3|2700|Flavored|England
+GIN|The English London Dry Gin|700|4.5|2700|London Dry|England
+GIN|Haymans London Dry Gin|700|4.3|3000|London Dry|United Kingdom
+GIN|Monkey 47 Schwarzwald Dry|500|4.4|3000|Distilled|Germany
+GIN|Cobalto 17|750|4.3|3000|London Dry|Italy
+GIN|Blind Tiger Imperial Secrets|500|4.4|3000|London Dry|Belgium
+GIN|Sipsmith Gin|700|4.3|3000|London Dry|England
+GIN|Jodhpur Gin|700|4.1|3000|London Dry|England
+GIN|Crafters London Dry Gin|700|4.1|3000|London Dry|Latvia
+GIN|Jodhpur Baori Distilled Gin|700|4|3100|London Dry|India
+GIN|Jodhpur Spicy|700|4.2|3100|Flavored|England
+GIN|Jodhpur Mandore|700|4|3100|Flavored|England
+GIN|Tanqueray Ten|1000|4.2|3100|London Dry|England
+GIN|Tenjaku Gin|700|4.3|3200|Japanese|Japan
+GIN|Jamun The Himalayan Juniper Dry Gin|750|4.5|3200|Compound|India
+GIN|Kumaon & I Himalayan Gin|700|4.5|3200|Compound|India
+GIN|Boodles British Gin|700|4.4|3200|London Dry|United Kingdom
+GIN|Jaisalmer Gin|750|4.8|3200|London Dry|India
+GIN|Cambridge English Dry Gin|700|4.4|3200|London Dry|England
+GIN|Blue Spirits Blue Wind Gin|750|4.3|3250|London Dry|Germany
+GIN|Blue Spirits Ghost Gin|750|4.4|3250|London Dry|Germany
+GIN|Bombay Bramble|1000|4.4|3300|Flavored|England
+GIN|Tommy Bahama Island Gin|750|4.5|3400|Flavored|United States
+GIN|Roku Gin|700|4.8|3400|Japanese|Japan
+GIN|Hendricks Gin|700|4.3|3400|London Dry|Scotland
+GIN|Haymans Old Tom Gin|700|4.3|3500|Old Tom|United Kingdom
+GIN|Hendricks Flora Adora Gin|700|4|3500|Flavored|United States
+GIN|Blind Tiger Piper Cubeba|500|4.4|3500|London Dry|Belgium
+GIN|Hendricks Neptunia Gin|700|4.4|3500|Flavored|Scotland
+GIN|Colonsay Gin|700|4.3|3500|London Dry|Scotland
+GIN|Caorunn Scottish Gin|700|4.4|3500|London Dry|Scotland
+GIN|Akori Gin Cherry|700|4.3|3500|Flavored|Japan
+GIN|Bacur Gin Bottega|700|4.5|3500|London Dry|Italy
+GIN|Cherrapunji Eastern Craft Gin|750|4.7|3600|Flavored|India
+GIN|Gordons Lime|1000|4.5|3700|Flavored|England
+GIN|Gin Mare Mediterranean Gin|700|4.6|3800|London Dry|Spain
+GIN|Roku Gin Sakura Bloom Edition|700|4|3800|Distilled|Japan
+GIN|Sabatini Gin|700|4.2|4000|Compound|Italy
+GIN|Crafters Aromatic Gin|700|4.5|4000|London Dry|Latvia
+GIN|Hendricks Lunar Gin|700|4.4|4000|Flavored|Scotland
+GIN|Gunpowder Irish Gin|700|4.4|4200|Flavored|Ireland
+GIN|Ki No Bi Gin|750|4.4|4200|London Dry|Japan
+GIN|Nikka Coffey Gin|700|4.4|4500|Flavored|Japan
+GIN|Fifty Pound Gin|750|4.3|4500|London Dry|England
+GIN|Haymans Exotic Citrus Gin|700|4.4|4500|Flavored|England
+GIN|Haymans Of London Sloe Gin|700|4.2|4500|Flavored|England
+GIN|The Botanist Islay Dry Gin|700|3.6|4500|London Dry|Scotland
+GIN|Junimperium Estonian Artisan Gin|700|4.3|4500|London Dry|Estonia
+GIN|Seven Hills Gin|750|4.1|4700|London Dry|Italy
+GIN|Haymans Peach And Rose Cup|700|4.2|4700|Flavored|England
+GIN|Scapegrace Classic Premium Gin|1000|4.4|5000|London Dry|New Zealand
+GIN|Jodhpur Reserve|500|4.4|5000|Flavored|England
+GIN|Bobby Dry Gin|700|4.2|5000|London Dry|Netherlands
+GIN|Bobby Schiedam Jenever|700|4.4|5000|Genever|Netherlands
+GIN|The London No 1|1000|4.4|5200|London Dry|England
+GIN|Cambridge Japanese Gin|700|4.3|5200|Flavored|England
+GIN|Copper Head|500|4.4|5500|London Dry|Belgium
+GIN|Copper Head Black Batch|500|4.6|5500|London Dry|Belgium
+GIN|Bombay Sapphire Limited Edition|1000|4.5|5800|London Dry|England
+GIN|Mermaid Pink Gin|700|4.5|6000|Flavored|England
+GIN|Copper Head Gibson Edition|500|4.5|6000|London Dry|Belgium
+GIN|Star Of Bombay|1000|4.5|6100|London Dry|England
+GIN|Method N Madness|700|4.3|6200|Flavored|England
+GIN|Japanese Dry Gin Sakurao|700|4.4|6500|London Dry|Japan
+GIN|Pink 47 Gin|700|4.2|6500|Flavored|England
+GIN|Hendricks Amazonia|1000|4.4|6500|Flavored|Scotland
+GIN|Le Gin De Christian Drouin|700|4.5|6800|Flavored|France
+GIN|Tarquins Strawberry And Lime Gin|700|4.2|7000|Flavored|England
+GIN|Tarquins Pink Grapefruit & Elderflower Gin|700|4.6|7000|Flavored|England
+GIN|Tarquins Rhubarb And Raspberry Gin|700|4.4|7000|Flavored|England
+GIN|Martin Millers Gin|700|4.6|7000|Distilled|England
+GIN|Citadelle Gin|700|4.5|7000|London Dry|France
+GIN|Hepple Gin|700|4.8|7000|London Dry|England
+GIN|Martin Millers Mandarin And Cinnamon Gin|700|4.3|7000|Flavored|England
+GIN|Martin Millers Summerful Rosemary Gin|700|4.4|7000|Flavored|England
+GIN|Bathtub Gin|700|4.4|7200|Compound|England
+GIN|Height Of Arrows|700|4.5|7200|London Dry|Spain
+GIN|Height Of Arrows Bright|700|4.4|7200|London Dry|Spain
+GIN|Berthas Revenge|700|4.1|8000|London Dry|Ireland
+GIN|Kalevala Gin|700|4.3|8400|London Dry|Finland
+GIN|Mirabeau Dry Gin|700|4.2|8500|London Dry|France
+GIN|Cotswolds Wildflower Gin|700|4.6|8800|London Dry|England
+GIN|Cotswolds Wildflower Gin No 2|700|4.4|8800|London Dry|England
+GIN|44 Degree North Gin|500|4.1|9800|London Dry|India
+LIQUEUR|Sky Shots Fireball|330|5|350|Liqueur|United States
+LIQUEUR|Absente 49|100|4.3|700|Herbal Liqueur|France
+LIQUEUR|Onsra Zest Triple Sec|750|4|950|Fruit Liqueurs|India
+LIQUEUR|Cynar Spritz|1000|4.3|1000|Herbal Liqueur|Italy
+LIQUEUR|Orange Duck Triple|700|4.2|1000|Bitters & Aperitifs|France
+LIQUEUR|Pacodo Conde White Wine|750|4.4|1000|Bitters & Aperitifs|Portugal
+LIQUEUR|Senorita Sauvignon Blanc|750|4.5|1200|Bitters & Aperitifs|Chile
+LIQUEUR|Cinzano Rosso|750|4.3|1200|Bitters & Aperitifs|Italy
+LIQUEUR|Cazanove Aperitivo|750|4.5|1200|Bitters & Aperitifs|Italy
+LIQUEUR|Volare Brown Liq|750|4.1|1200|Coffee & Cream Liqueurs|Italy
+LIQUEUR|Sambuca Del Lago|700|4.5|1300|Herbal Liqueur|Italy
+LIQUEUR|Zappa Sambuca Blue|750|4.4|1400|Herbal Liqueur|Italy
+LIQUEUR|Lazzaroni Grappa Bianca Del Chiostro|700|4.3|1400|Brandy & Whisky Liqueurs|Italy
+LIQUEUR|Butler Blue Curacao|750|4.4|1400|Fruit Liqueurs|Netherlands
+LIQUEUR|Butlers Peppermint|750|4.3|1400|Herbal Liqueur|Ireland
+LIQUEUR|Martini Rosso|1000|4.4|1500|Bitters & Aperitifs|Italy
+LIQUEUR|Martini Bianco Vermouth|1000|4.5|1500|Bitters & Aperitifs|Italy
+LIQUEUR|Pouilly Fume 750|750|4.3|1500|Bitters & Aperitifs|France
+LIQUEUR|Martini Extra Dry|1000|4.4|1500|Bitters & Aperitifs|Italy
+LIQUEUR|Aperol|750|4.2|1500|Bitters & Aperitifs|Italy
+LIQUEUR|Martini Fiero|750|4.4|1500|Bitters & Aperitifs|Italy
+LIQUEUR|Vinci Sambuca|700|4.4|1500|Herbal Liqueur|Italy
+LIQUEUR|Campari Negroni|500|4.5|1500|Bitters & Aperitifs|Italy
+LIQUEUR|Amaretto Del Lago|700|4.4|1500|Herbal Liqueur|Italy
+LIQUEUR|Sierra Tequila Reposado|750|4.4|1500|Tequila & Agave Liqueurs|Mexico
+LIQUEUR|Lazzaroni Triple Sec|700|4.3|1600|Bitters & Aperitifs|Italy
+LIQUEUR|Kahlua Liquor|750|4.6|1600|Coffee & Cream Liqueurs|Mexico
+LIQUEUR|Antica Sambuca Classic|700|4.5|1700|Herbal Liqueur|Italy
+LIQUEUR|La Ananta Absinthe|750|4|1750|Herbal Liqueur|India
+LIQUEUR|Baileys Irish Cream|750|4.5|1800|Coffee & Cream Liqueurs|Ireland
+LIQUEUR|Pancho Fierro|750|4.3|1800|Herbal Liqueur|Peru
+LIQUEUR|Napoleon XO Royal Castle 700|700|4.3|1800|Brandy & Whisky Liqueurs|France
+LIQUEUR|Bandarful Coffee Liqueur|750|4|1800|Coffee & Cream Liqueurs|India
+LIQUEUR|Butlers Triple Sec Orange|750|4.3|1800|Bitters & Aperitifs|Ireland
+LIQUEUR|Campari|750|4.4|1800|Bitters & Aperitifs|Italy
+LIQUEUR|Molinari Sambuca|750|4.2|1900|Herbal Liqueur|Italy
+LIQUEUR|Triple Sec Teichenne|700|4.1|1900|Bitters & Aperitifs|Spain
+LIQUEUR|Limoncello Del Lago|700|4.5|2000|Fruit Liqueurs|Italy
+LIQUEUR|X Rated Fusion Liqueur|750|4.4|2000|Fruit Liqueurs|France
+LIQUEUR|Bitter Gancia Canelli|1000|4.2|2000|Bitters & Aperitifs|Italy
+LIQUEUR|Limoncello D Amalfi Liqueur|750|4|2000|Fruit Liqueurs|Italy
+LIQUEUR|Buschjagers Liquor|700|4.3|2000|Liqueur|Germany
+LIQUEUR|Dr Burklin Wolf|750|4.4|2000|Liqueur|
+LIQUEUR|Butlers Espresso|750|4.4|2000|Coffee & Cream Liqueurs|Ireland
+LIQUEUR|Georges Duboeuf Beaujolais Villages|750|4.2|2000|Bitters & Aperitifs|France
+LIQUEUR|Limoncello Della Riviera|700|4.4|2100|Fruit Liqueurs|Italy
+LIQUEUR|Baileys Salted Caramel Liqueur|750|4.3|2200|Coffee & Cream Liqueurs|Ireland
+LIQUEUR|Bonga Bonga Mystery Liqueur|750|5|2200|Liqueur|India
+LIQUEUR|Select Bitter Aperitif|700|4.4|2400|Bitters & Aperitifs|Italy
+LIQUEUR|Baileys Strawberry & Cream|750|4.3|2400|Coffee & Cream Liqueurs|Ireland
+LIQUEUR|Spicebomb Irish Whiskey And Vodka|700|4.1|2400|Brandy & Whisky Liqueurs|Ireland
+LIQUEUR|Angostura Aromatic Bitters|200|4.4|2400|Bitters & Aperitifs|Trinidad and Tobago
+LIQUEUR|Harveys Bristol Cream|1000|4.5|2400|Bitters & Aperitifs|United Kingdom
+LIQUEUR|Archers Peach Schnapps|700|4.3|2500|Fruit Liqueurs|United Kingdom
+LIQUEUR|Jagermeister Liqueur|700|4.8|2500|Herbal Liqueur|Germany
+LIQUEUR|Georges Duboeuf Macon Village White Burgundy|750|4.5|2500|Bitters & Aperitifs|France
+LIQUEUR|Chartreuse Liqueur|700|4.4|2600|Herbal Liqueur|France
+LIQUEUR|Limu Limencello|700|4.2|2800|Fruit Liqueurs|Italy
+LIQUEUR|Schwartzhog|750|4.1|2800|Herbal Liqueur|Germany
+LIQUEUR|Chambord|750|4.4|2800|Fruit Liqueurs|France
+LIQUEUR|Robert Mondavi Sauvignon Blanc|750|4.2|3000|Bitters & Aperitifs|United States
+LIQUEUR|Henri Bardouin Pastis Liqueur|700|4.2|3000|Herbal Liqueur|France
+LIQUEUR|Pimms|1000|4.4|3000|Fruit Liqueurs|United Kingdom
+LIQUEUR|Drambuie Liqueur|750|4.3|3000|Brandy & Whisky Liqueurs|Scotland
+LIQUEUR|Fernet Amaro Aolo Azzaroni|700|4.3|3000|Herbal Liqueur|Italy
+LIQUEUR|Fernet Gancia Liqueur|700|4.6|3000|Herbal Liqueur|Italy
+LIQUEUR|Cointreau|700|4.5|3000|Bitters & Aperitifs|France
+LIQUEUR|Amarula Cream|750|4.4|3200|Coffee & Cream Liqueurs|South Africa
+LIQUEUR|Lazzaroni Maraschino|700|4.2|3200|Fruit Liqueurs|Italy
+LIQUEUR|Luxardo Sambuca Dei Cesari|1000|4.3|3200|Herbal Liqueur|Italy
+LIQUEUR|Amaro Montenegro|750|4.4|3200|Herbal Liqueur|Italy
+LIQUEUR|Cocalero Classico|700|4.3|3500|Herbal Liqueur|Peru
+LIQUEUR|Absinthe 49|700|4.5|3500|Herbal Liqueur|France
+LIQUEUR|Mis Amigos Chocolate Cream Tequila|700|4|3500|Tequila & Agave Liqueurs|Mexico
+LIQUEUR|Mis Amigos Coffee Tequila|700|4|3500|Tequila & Agave Liqueurs|Mexico
+LIQUEUR|Mis Amigos Strawberry Cream Tequila|700|4|3500|Tequila & Agave Liqueurs|Mexico
+LIQUEUR|Disarno Liquer|1000|4.4|3500|Herbal Liqueur|Italy
+LIQUEUR|Baileys Birthday Cake|700|4.4|3500|Coffee & Cream Liqueurs|Ireland
+LIQUEUR|Midori Melon|700|4.3|3800|Fruit Liqueurs|Japan
+LIQUEUR|Xenta Absenta Lime Ginger|700|4.3|4000|Herbal Liqueur|France
+LIQUEUR|Xenta Absenta Orange|700|4.7|4000|Herbal Liqueur|France
+LIQUEUR|Xenta Absenta Apple|700|4.5|4000|Herbal Liqueur|France
+LIQUEUR|Lustau Deluxe Cream Capataz Andres Sherry|750|4.3|4600|Bitters & Aperitifs|Spain
+LIQUEUR|Vermut Lustau Blanco White|750|4.3|4600|Bitters & Aperitifs|Spain
+LIQUEUR|Vermut Lustau Rojo Red|750|4.5|4600|Bitters & Aperitifs|Spain
+LIQUEUR|Jager Cold Brew|1000|4.5|5000|Herbal Liqueur|Germany
+LIQUEUR|Somrus Chai Cream Liqueur|750|4.3|5200|Coffee & Cream Liqueurs|United States
+LIQUEUR|Somrus Coffee Cream Liqueur|750|4.4|5200|Coffee & Cream Liqueurs|United States
+LIQUEUR|Somrus Mango Cream Liqueur|750|4.4|5200|Coffee & Cream Liqueurs|United States
+LIQUEUR|Pinaq Original Liqueur|1000|4.3|5800|Fruit Liqueurs|France
+LIQUEUR|Pinaq Rose|1000|4.4|5800|Fruit Liqueurs|France
+LIQUEUR|Fair Cafe Liquer|700|4.5|6000|Coffee & Cream Liqueurs|France
+LIQUEUR|Vivir Cafe Coffee Liqueur|700|4.1|6200|Coffee & Cream Liqueurs|Mexico
+LIQUEUR|Jagermeister Manifest|1000|4.6|6500|Herbal Liqueur|Germany
+LIQUEUR|Sheridans Coffee Liquer|1000|4.4|8000|Liqueur|Ireland
+RTD|Hill Station Himalayan Apple Strong Can|330|4.2|150|Alternative Fermentables|India
+RTD|Schweppes Mojito RTD|275|5|150|Flavored|India
+RTD|Rio Red Strong Party Drink|330|5|150|Flavored|India
+RTD|Rio Gold Strong Party Drink|330|3.2|150|Flavored|India
+RTD|Bacardi Plus Cranberry|275|4.6|150|Specialty Ales|India
+RTD|Hill Station Himalayan Apple Original|330|4.3|150|Alternative Fermentables|India
+RTD|Grizly Peach & Black Tea|330|4.5|150|Specialty Ales|India
+RTD|Bacardi Plus Orange|275|4.6|150|Specialty Ales|India
+RTD|Hill Station Himalayan Apple Berry Twist|330|4.3|150|Alternative Fermentables|India
+RTD|Grizly Gold Pine Apple & Okinawa Sugar Can|330|4.4|150|Specialty Ales|India
+RTD|Grizly Gold Pine Apple & Okinawa Sugar|330|4.3|150|Specialty Ales|India
+RTD|Bacardi Breezer Lemonade|275|4.5|150|Flavored|India
+RTD|Wild Drum Mango Hard Seltzer|330|4.4|150|Flavored|India
+RTD|Hill Station Himalayan Apple Strong|330|4.5|150|Alternative Fermentables|India
+RTD|Wild Drum Lemon Mint Hard Seltzer|330|4.4|150|Flavored|India
+RTD|Grizly Blueberry & Rosemary|330|4.5|150|Specialty Ales|India
+RTD|Breezer Blackberry|275|4.5|170|Flavored|India
+RTD|Tilt Bubbly Can|250|4.4|170|Sparkling Wine|India
+RTD|Breezer Blueberry|275|4.2|170|Flavored|India
+RTD|Breezer Ripe Mango Peach Flavour|275|5|170|Flavored|India
+RTD|Tilt Bubbly Rose Can|250|4.4|170|Sparkling Wine|India
+RTD|Tilt White Can|250|4.4|170|White Wine|India
+RTD|Breezer Jamaican Passion|275|4.2|170|Flavored|India
+RTD|Breezer Cranberry|275|4.4|170|Flavored|India
+RTD|Breezer Orange|275|4.4|170|Flavored|India
+RTD|Breezer Lemon Iced Tea Flv|275|4.5|170|Flavored|India
+RTD|Breezer Juniper And Lime|275|4.4|170|Flavored|India
+RTD|Breezer Watermelon Flavour|275|4.4|170|Flavored|India
+RTD|Tilt Red Can|250|4.2|170|Red Wine|India
+RTD|Wild Drum Pure Hard Seltzer Strong|500|4.4|200|Flavored|India
+RTD|Wild Drum Peach Hard Seltzer|500|4.4|200|Flavored|India
+RTD|Bombay Sapphire Gin & Tonic|250|4.4|250|Flavored|England
+RTD|Jack Daniels Tennessee Cola Can|330|4.5|250|Tennessee|United States
+RTD|Sky Shots Supernova|330|4|350|Flavored|United States
+`;
+const categoryInfo={BEER:{label:'Beer',cover:'images/cat_beer.jpg',note:'Lagers, ales, stouts, wheat beers and imports.'},GIN:{label:'Gin',cover:'images/lic_gin2.jpg',note:'Indian craft, London Dry and flavored gins.'},LIQUEUR:{label:'Liqueurs',cover:'images/cat_liqueur.jpg',note:'Herbal, fruit, coffee/cream, aperitif and agave selections.'},RTD:{label:'RTD & Party Drinks',cover:'images/lic_beer2.jpg',note:'Ready-to-drink mixes, breezers and hard seltzers.'}};
+const products=rawProducts.trim().split(/\r?\n/).map((line,index)=>{const [category,name,size,rating,price,type,country]=line.split('|');return{category,name,size:Number(size),rating:Number(rating),price:Number(price),type,country:country||'Not specified',index}});
+const perPage=40;let active='BEER';let page=1;
+const tabs=document.getElementById('categoryButtons');const search=document.getElementById('search');const sort=document.getElementById('sort');const rows=document.getElementById('rows');const summary=document.getElementById('summary');const pageLabel=document.getElementById('pageLabel');const prev=document.getElementById('prev');const next=document.getElementById('next');
+function esc(value){return String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]))}
+function renderTabs(){tabs.innerHTML=Object.keys(categoryInfo).map(key=>{const info=categoryInfo[key];const count=products.filter(p=>p.category===key).length;return '<button class="cat-button '+(key===active?'on':'')+'" type="button" data-category="'+key+'" style="--cat-image:url(\''+info.cover+'\')"><span>'+info.label+'</span><small>'+count+' listed products</small></button>'}).join('');tabs.querySelectorAll('button').forEach(button=>button.addEventListener('click',()=>{active=button.dataset.category;page=1;search.value='';sort.value='default';renderTabs();renderRows()}))}
+function getVisible(){let list=products.filter(p=>p.category===active);const q=search.value.trim().toLowerCase();if(q)list=list.filter(p=>[p.name,p.type,p.country,String(p.size)].some(v=>v.toLowerCase().includes(q)));switch(sort.value){case'price-asc':list.sort((a,b)=>a.price-b.price||a.index-b.index);break;case'price-desc':list.sort((a,b)=>b.price-a.price||a.index-b.index);break;case'rating-desc':list.sort((a,b)=>b.rating-a.rating||a.index-b.index);break;case'name-asc':list.sort((a,b)=>a.name.localeCompare(b.name));break;}return list}
+function renderRows(){const info=categoryInfo[active];const list=getVisible();const pages=Math.max(1,Math.ceil(list.length/perPage));page=Math.min(page,pages);const start=(page-1)*perPage;rows.innerHTML=list.slice(start,start+perPage).map(p=>'<tr><td class="product">'+esc(p.name)+'</td><td>'+p.size.toLocaleString('en-IN')+' ml</td><td class="rating">★ '+esc(p.rating.toFixed(1))+'</td><td class="price">₹'+p.price.toLocaleString('en-IN')+'</td><td>'+esc(p.type)+'</td><td>'+esc(p.country)+'</td></tr>').join('');summary.textContent=info.label+' · '+list.length+' products · Showing '+(list.length?start+1:0)+'–'+Math.min(start+perPage,list.length)+' · Prices and ratings as supplied';pageLabel.textContent='Page '+page+' of '+pages;prev.disabled=page<=1;next.disabled=page>=pages;document.getElementById('categoryPhoto').src=info.cover;document.getElementById('categoryPhoto').alt=info.label+' category photograph';document.getElementById('photoHeading').textContent=info.label+' collection'}
+search.addEventListener('input',()=>{page=1;renderRows()});sort.addEventListener('change',()=>{page=1;renderRows()});prev.addEventListener('click',()=>{page--;renderRows();document.querySelector('.table-wrap').scrollIntoView({behavior:'smooth',block:'start'})});next.addEventListener('click',()=>{page++;renderRows();document.querySelector('.table-wrap').scrollIntoView({behavior:'smooth',block:'start'})});renderTabs();renderRows();
+</script>
+</body>
+</html>
